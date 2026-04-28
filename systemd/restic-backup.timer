@@ -1,0 +1,13 @@
+[Unit]
+Description=Timer for Nightly Restic Backup
+
+[Timer]
+# Run exactly at midnight
+OnCalendar=*-*-* 00:00:00
+# If the laptop was asleep at midnight, run it immediately after waking up
+Persistent=true
+# Optional random delay to avoid network congestion if backing up multiple laptops
+RandomizedDelaySec=15m
+
+[Install]
+WantedBy=timers.target

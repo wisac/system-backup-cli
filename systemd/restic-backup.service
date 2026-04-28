@@ -1,0 +1,16 @@
+[Unit]
+Description=Nightly Restic Backup with Google Cloud Storage
+Documentation=man:restic(1)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# Adjust this to match your username (e.g. root or wilson)
+User=wilson
+ExecStart=/home/wilson/DEVELOPMENTS/PROJECTS/backup/backup.sh
+# Set limits to prevent backup process from freezing the laptop
+IOSchedulingClass=idle
+CPUSchedulingPolicy=idle
+# Restic uses ~/.cache/restic for caching data
+# You can enable systemd sandboxing (ProtectSystem=strict, etc.) but must authorize ~/.cache/restic explicitly if you do.

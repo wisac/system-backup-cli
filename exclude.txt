@@ -1,0 +1,40 @@
+# Project-specific / Build outputs
+*/node_modules/**
+*/dist/**
+*/build/**
+*/target/**
+*/out/**
+*.class
+*.o
+
+# Logs and Caches
+*.log
+*/.cache/**
+*/.npm/**
+*/.rustup/**
+*/.cargo/registry/**
+.gradle/
+.m2/
+
+# OS/System generated
+.DS_Store
+.Trash-*
+lost+found/
+/tmp/**
+/var/tmp/**
+/run/**
+
+# Virtual Environments
+*/venv/**
+*/.venv/**
+*/env/**
+*/.tox/**
+
+# Large Media (Optional, uncomment if omitting media)
+# *.mp4
+# *.iso
+# */Pictures/**
+
+# Secrets
+/home/wilson/secrets/**
+

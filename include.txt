@@ -1,0 +1,10 @@
+# List additional files and directories to back up here.
+# These will be included in the backup regardless of whether they exist inside 
+# the main BACKUP_SOURCE directory defined in your .env file.
+# 
+# Provide one absolute path per line.
+#
+# Examples:
+# /etc/nginx
+# /var/log/syslog
+# /opt/scripts
